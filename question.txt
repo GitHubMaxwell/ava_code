@@ -1,0 +1,54 @@
+Int to Hex
+
+Write for me a function that does the following:
+
+Input: 3 separate Integer values
+Output:  a 7-character length string representing the hexadecimal value of the input integers in the format of “#xxxxxx”
+Example Input:
+(9,208,194)
+#09D0C2
+
+Notes: 
+09 / 16 = 0 R 9
+208 / 16 = 14 R 0
+194 / 16 = 13 R 2 
+255 =  R 15
+
+// 10 = a, 11 = b, up to 15 = f
+
+Function translate(int1, int2, int3) {
+// comes in as int values
+// correct JS range
+
+Let string = ‘#’;
+Let array = [];
+
+array.push(int1);
+array.push(int2;
+array.push(int3);
+
+Function Helper(value) {
+        // series of if statements to determine whether the value 
+
+        // translate to letter depending on the numerical value
+        // if statements
+If (value === ‘10’) {
+        helper(firstChar);
+        continue;
+    } 
+    // continue 
+    }
+for(let i = 0; i < array.length -1; i ++) {
+
+    // STEP: create string from value
+    Let firstChar = helper(JSON.stringify(Math.floor((array[i] / 16)));
+    Let secondChar = helper(JSON.stringify(Array[i] % 16));
+    
+    // 2 STEP: build into helper method that takes int the new value and determines whether output string version
+    
+
+    // STEP 3: push hexadecimal value into string
+}
+// STEP 4: return string;
+
+}
