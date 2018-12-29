@@ -6,6 +6,21 @@ function hexLetter(num) {
 }
 
 function intToHex(int1, int2, int3) {
+  // ensure all arguments have values
+  if (arguments.length < 3) {
+    return "Missing Values";
+  }
+  // ensure all integers are in correct range
+  if (
+    int1 < 0 ||
+    int1 > 255 ||
+    int2 < 0 ||
+    int2 > 255 ||
+    int3 < 0 ||
+    int3 > 255
+  ) {
+    return "All numbers must be between 0 - 255";
+  }
   let str = "#";
   let firstChar, secondChar;
 
@@ -20,7 +35,6 @@ function intToHex(int1, int2, int3) {
     str +=
       secondChar >= 10 ? hexLetter(secondChar) : JSON.stringify(secondChar);
   }
-  return str; //?
+  return str;
 }
-
-intToHex(9, 208, 194);
+module.exports = intToHex;

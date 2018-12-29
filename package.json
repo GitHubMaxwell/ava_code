@@ -1,0 +1,17 @@
+{
+  "name": "avalara_code",
+  "version": "1.0.0",
+  "description": "Continuing the progress we made together during the interview",
+  "main": "original.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "author": "maxwell rediker",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^23.6.0"
+  }
+}
